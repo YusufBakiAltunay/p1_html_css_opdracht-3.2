@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUI-Boekingformulier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Boekingsformulier</h1>
+    <form action="">
+        <label for="firstname">Voornaam</label>
+        <input pattern="[A-Za-z]" type="text" name="firstname">
+         <br><br>
+        
+        
+         <label for="surname">Achternaam</label>
+        <input pattern="[A-Za-z]" type="text" name="surname">
+        <br><br>
+        
+        
+        <label for="gender">Geslacht</label>
+        <input type="radio" name="gender" checked value="man"> Man
+        <input type="radio" name="gender" value="vrouw"> Vrouw
+        <br><br>
+        
+        
+        <label for="straatmethiusnummer">Straat met Huisnummer</label>
+        <input type="text" name="straatmethiusnummer">
+        <br><br>
+        
+        
+        <label for="postcode">Postcode</label>
+        <input type="text" name="postcode">
+        <br><br>
+
+        <label for="land">Land</label>
+        <input type="text" name="land">
+        <br><br>
+
+        <label for="socialnummer">BSN-nummer</label>
+        <input maxlength="9" type="nummer" name="socialnummer">
+        <br><br>
+
+        <label for="holidaycountries">Vakantieland</label>
+        <select name="holidaycountries" id="">
+            <option value="Turkei">Turkei</option>
+            <option value="Nederland">Nederland</option>
+            <option value="Belgie">Belgie</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Curacao">Curacao</option>
+        </select>
+        <br><br>
+
+        <label for="dateofdeparture">Datum van vertrek</label>
+        <input type="date" name="dateofdeparture" min="2024-09-18">
+        <br><br>
+
+        <label for="dateofreturn">Datum van terugkomst</label>
+        <input type="date" name="dateofreturn" id="">
+        <br><br>
+
+        <label for="nummeroftravelingcompanions">Aantal reisgenoten</label>
+         <select name="nummeroftravelingcompanions" id="">
+            <option value="person1">1</option>
+            <option value="person2">2</option>
+            <option value="person3">3</option>
+            <option value="person4">4</option>
+         </select>
+         <br><br>
+
+        <button>Boek Nu</button>
+        <br><br>
+
+        <label for="e-mail">E-mail</label>
+        <input type="email" name="e-mail">
+        <br><br>
+
+        <label for="password">Wachtwoord</label>
+        <input type="password" name="password">
+
+
+
+    </form>
+</body>
+</html>
